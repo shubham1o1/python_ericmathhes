@@ -69,7 +69,7 @@
         >>> print(name.lower())
         ada lovelace     
     ```
-    - The lower() method is particularly useful for storing data. Many times you won’t want to trust the capitalization that your users provide, so you’ll convert strings to lowercase before storing them
+- The lower() method is particularly useful for storing data. Many times you won’t want to trust the capitalization that your users provide, so you’ll convert strings to lowercase before storing them
 #### Using Variables in strings:
 - Combining two strings:
     ```python
