@@ -1,7 +1,15 @@
 ## Chapter 2 : Variables and simple data types
 ---
 
-- Python Shell workout and some snippets in chapter2.py are present here.
+In this chapter you will learn to work with *variables*. You will learn to use descriptive *variable names* and how to *resolve name errors* and *syntax errors* when they arise. You will learn what *strings* are and how to display strings using *lowercase, uppercase, and title case*. You will start using whitespace to organize output neatly, and you will learn to strip unneeded whitespace from different parts of a string. You will start working with integers and floats, and learn some of the ways you can work with numerical data. You will also learn to write explanatory comments to make your code easier for you and others to read. Finally, you will read about the philosophy of keeping your code as simple as possible, whenever possible Python Shell workout and some snippets in chapter2.py.
+
+### Topics Covered:
+1. Naming
+2. Strings
+3. Numbers
+4. Comments
+5. The Zen of Python
+---
 
 ### Hello world program:
 - ```message``` is a variable and ```Hello python world !``` is the value of ```message``` variable
@@ -12,7 +20,8 @@
         >>> print(message)
         Hello python world!
     ```
-### Naming Conventions:
+---
+### 1. Naming Conventions:
 #### Name : 
 - Letters, numbers, underscore. 
 - Starts with letters or number. 
@@ -39,7 +48,8 @@
 - file name ```chapter2.py``` has error at line 9. 
 - NameError occurred and ```meas``` is not defined.
 - A name error usually means we either forgot to set a variable’s value before using it, or we made a spelling mistake when entering the variable’s name.
-### Strings:
+---
+### 2. Strings:
 - Series of character
 - inside quotes (both single and double) 
     ```python
@@ -212,7 +222,6 @@
     Psalm once said, "Search in your own heart with all diligence because out of it flow the issue of life"
 
     ```
-
 - 2.6 Strippingg:
 
     ```bash
@@ -225,5 +234,124 @@
     John     Cena
 
     ```
+---
+### 3. Numbers:
+#### Integers:
+- Operators : +, -, /, *, **
+- Orders : Priorities; (PEMDAS)
+#### Floats:
+- Numbers with Decimals points
+- Weird stuffs:
+    ```bash
+    >>> 0.2 + 0.1
+    0.30000000000000004
+    ```
+- Division's result is floats even if dividend and divisor are integers:
+    ```bash
+    >>> 4/2
+    2.0
+    ```
+- mixing integers and floats gives floats.
+    ```bash
+    >>> 1 + 2.0
+    3.0
+    ```
+#### Underscores in Numbers:
+- For grouping of long Numbers:
+    ```bash
+    >>> universeAge = 14_000_000_000
+    >>> universeAge
+    14000000000
+    >>> ram = 10_00_00
+    >>> ram
+    100000
+    ```
+- Not necessarily digit limit or comma's grouping convention. 
+#### Multiple Assignments:
+- Separate variable names with commas you can do the usual assignment after that. 
+    ```bash
+    >>> x, y, z = 0,1,2
+    >>> print(f"{x}{y}{z}")
+    012
+    >>> print(x,y,z)
+    0 1 2
+    ```
+#### Constants:
+- Python doesn’t have built-in constant types, but Python programmers use all capital letters to indicate a variable should be treated as a constant and never be changed:
+    ```bash
+    >>> MAX = 20000
+    ```
+#### Try it yourself:
+- 2.8 Number Eight:
+    ```bash
+    >>> print(5+3)
+    8
+    >>> print(11-3)
+    8
+    >>> print(8*1)
+    8
+    >>> print(16/2)
+    8.0
+    ```
+- 2.9 Favorite Number:
+    ```bash
+    >>> favorite_number = 42
+    >>> message = "My favorite number is:" 
+    >>> print(message, favorite_number)
+    My favorite number is: 42
+    ```
+---
+### 4. Comments:
+- '#' indicates comment
+    ```python
+    # This is comment 
+    ```
+- Python iggnores comments.
+---
+### 5. THE ZEN OF PYTHON
 
-### Numbers:
+```
+
+    >>> import this
+    The Zen of Python, by Tim Peters
+
+    Beautiful is better than ugly.
+    Explicit is better than implicit.
+    Simple is better than complex.
+    Complex is better than complicated.
+    Flat is better than nested.
+    Sparse is better than dense.
+    Readability counts.
+    Special cases aren't special enough to break the rules.
+    Although practicality beats purity.
+    Errors should never pass silently.
+    Unless explicitly silenced.
+    In the face of ambiguity, refuse the temptation to guess.
+    There should be one-- and preferably only one --obvious way to do it.
+    Although that way may not be obvious at first unless you're Dutch.   
+    Now is better than never.
+    Although never is often better than *right* now.
+    If the implementation is hard to explain, it's a bad idea.
+    If the implementation is easy to explain, it may be a good idea.
+    Namespaces are one honking great idea -- let's do more of those!
+
+```
+#### Beautiful is better than ugly.
+
+- Programmers have always respected well-designed efficient, and even beautiful solutions to problems.
+
+#### Simple is better than complex.
+- If you have a choice between a simple and a complex solution, and both work, use the simple solution. Your code will be easier to maintain, and it will be easier for you and others to build on that code later on.
+
+#### Complex is better than complicated.
+- Real life is messy, and sometimes a simple solution to a problem is
+unattainable. In that case, use the simplest solution that works.
+
+#### Readability counts.
+- When you’re working on a project that involves complex coding, focus on writing informative comments for that code.
+
+#### There should be one-- and preferably only one --obvious way to do it.
+- The nuts and bolts of your programs should make sense to other Python programmers.
+
+#### Now is better than never.
+- You could spend the rest of your life learning all the intricacies of Python and of programming in general, but then you’d never complete any projects. Don’t try to write perfect code; write code that works, and then decide whether to improve your code for that project or move on to something new.
