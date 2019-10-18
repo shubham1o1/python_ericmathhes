@@ -12,34 +12,33 @@
         >>> print(message)
         Hello python world!
     ```
-
 ### Naming Conventions:
-- #### Name : 
-    - Letters, numbers, underscore. 
-    - Starts with letters or number. 
-    - No space, keywords
-    - short and descriptive
-    - lowercase l and 1 and uppercase O and 0 are confusing, beware of those
-    - lowercase names, uppercase -> classes and constants
-- #### Name Errors: 
-    - Purposeful error while running follwing script
+#### Name : 
+- Letters, numbers, underscore. 
+- Starts with letters or number. 
+- No space, keywords
+- short and descriptive
+- lowercase l and 1 and uppercase O and 0 are confusing, beware of those
+- lowercase names, uppercase -> classes and constants
+#### Name Errors: 
+- Purposeful error while running follwing script
 
-        ```python
-            message = "Hello Python Crash Course world!"
+    ```python
+        message = "Hello Python Crash Course world!"
 
+        print(meas)
+    ```
+- Output: 
+    ```bash 
+        Traceback (most recent call last):
+        File "chapter2.py", line 9, in <module>
             print(meas)
-        ```
-    - Output: 
-        ```bash 
-            Traceback (most recent call last):
-            File "chapter2.py", line 9, in <module>
-                print(meas)
-            NameError: name 'meas' is not defined
-        ```
-    - Traceback is a record of where the interpreter ran into trouble
-    - file name ```chapter2.py``` has error at line 9. 
-    - NameError occurred and ```meas``` is not defined.
-    - A name error usually means we either forgot to set a variable’s value before using it, or we made a spelling mistake when entering the variable’s name.
+        NameError: name 'meas' is not defined
+    ```
+- Traceback is a record of where the interpreter ran into trouble
+- file name ```chapter2.py``` has error at line 9. 
+- NameError occurred and ```meas``` is not defined.
+- A name error usually means we either forgot to set a variable’s value before using it, or we made a spelling mistake when entering the variable’s name.
 ### Strings:
 - Series of character
 - inside quotes (both single and double) 
@@ -55,7 +54,7 @@
         >>> print(message)
         One of Python's strengths is its diverse community.
     ```
-- #### Changing cases:
+#### Changing cases:
     ```bash
         #title function to capitalize initials
         >>> name = "ada lovelace"
@@ -71,7 +70,7 @@
         ada lovelace     
     ```
     - The lower() method is particularly useful for storing data. Many times you won’t want to trust the capitalization that your users provide, so you’ll convert strings to lowercase before storing them
-- #### Using Variables in strings:
+#### Using Variables in strings:
 - Combining two strings:
     ```python
         first_name = "ada"
@@ -108,7 +107,7 @@
             >>> full_name
             'ada lovelace'
         ```
-- #### Whitespaces in Strings:
+#### Whitespaces in Strings:
 - Whitespace refers to any nonprinting character such as spaces, tabs, end of line symbols. 
 - Adding Whitespaces
     ```bash
@@ -164,7 +163,7 @@
 
     ```
     - In the real world, these stripping functions are used most often to clean up user input before it’s stored in a program.
-- #### Avoiding Syntax Errors with strings:
+#### Avoiding Syntax Errors with strings:
 - A syntax error occurs when Python doesn’t recognize a section of your program as valid Python code. For example, if you use an apostrophe within single quotes, you’ll produce an error. This happens because Python interprets everything between the first single quote and the apostrophe as a string. It then tries to interpret the rest of the text as Python code, which causes error.
     ```bash
 
