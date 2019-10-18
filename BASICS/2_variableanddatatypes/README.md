@@ -171,4 +171,59 @@
     >>> print(message)
     One of python's strengths is its diverse community
 
+
+    >>> print('one of python's strength is its diverse community')
+    File "<stdin>", line 1
+        print('one of python's strength is its diverse community') 
+                            ^
+    SyntaxError: invalid syntax
+
     ```
+- Error debugging suggestion in Appendix C
+#### Try it yourself:
+- 2.3 Personal Message:
+    ```bash
+    >>> name = "V-Ten"
+    >>> message = f"Hello {name} would you like to learn python today"
+    >>> print(message)
+    HelloV-Ten would you like to learn python today
+    ```
+- 2.4 Name Cases:
+
+    ```bash
+
+    >>> name = 'saMIr gHisING'
+    >>> lower = name.lower()
+    >>> upper = name.upper()
+    >>> title = name.title()
+    >>> print(f"lower: {lower}\nupper: {upper}\ntitle: {title}")
+    lower: samir ghising
+    upper: SAMIR GHISING
+    title: Samir Ghising
+
+    ```
+- 2.5 Famous Quote:
+
+    ```bash
+
+    >>> author = "Psalm"
+    >>> quote = "Search in your own heart with all diligence because out of it flow the issue of life"
+    >>> print(f"{author} once said, \"{quote}\"")
+    Psalm once said, "Search in your own heart with all diligence because out of it flow the issue of life"
+
+    ```
+
+- 2.6 Strippingg:
+
+    ```bash
+
+    # lstrip() and rstrip() can also be done 
+    >>> name = "\tJohn \t Cena\t"
+    >>> print(name)         
+            John     Cena   
+    >>> print(name.strip())
+    John     Cena
+
+    ```
+
+### Numbers:
