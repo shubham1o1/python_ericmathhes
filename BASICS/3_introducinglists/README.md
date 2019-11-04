@@ -35,11 +35,10 @@ In this chapter you will learn what lists are and how to work with the individua
     <class 'str'>
     ```
 #### Index Positions Start at 0, Not 1:
-
-    ```bash
-    >>> print(f"{bicycles[0]} is the 1st item \"bicycle[0]\"")
-    trek is the 1st item "bicycle[0]"
-    ```
+```python
+>>> print(f"{bicycles[0]} is the 1st item \"bicycle[0]\"")
+trek is the 1st item "bicycle[0]"
+```
 - Indexing last elements with -1. 
     ```bash
     >>> print(bicycles[-1])
