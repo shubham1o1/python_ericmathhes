@@ -3,5 +3,13 @@ pcc.pdf
 /venv
 BASICS/2_variableanddatatypes/chapter_02
 BASICS/3_introducinglists/chapter_03
+BASICS/4_workingwithlists/chapter_04
+BASICS/5_ifstatements/chapter_05
+BASICS/6_dictionaries/chapter_06
+BASICS/7_ipopAndWhile/chapter_07
+BASICS/8_fns/chapter_08
+BASICS/900_classes/chapter_09
+BASICS/910_filesandexcep/chapter_10
+BASICS/911_testing/chapter_11
 /.vscode
 paths.txt
