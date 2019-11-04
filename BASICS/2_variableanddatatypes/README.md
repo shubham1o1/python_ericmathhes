@@ -65,6 +65,7 @@ In this chapter you will learn to work with *variables*. You will learn to use d
         One of Python's strengths is its diverse community.
     ```
 #### Changing cases:
+
     ```bash
         #title function to capitalize initials
         >>> name = "ada lovelace"
@@ -237,7 +238,7 @@ In this chapter you will learn to work with *variables*. You will learn to use d
 ---
 ### 3. Numbers:
 #### Integers:
-- Operators : +, -, /, *, **
+- Operators : +, -, /, *, **, %
 - Orders : Priorities; (PEMDAS)
 #### Floats:
 - Numbers with Decimals points
