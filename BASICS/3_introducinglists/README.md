@@ -178,18 +178,18 @@ when you want to delete an item from a list and not use that item in any way, us
 If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to
 invite to dinner. Then use your list to print a message to each person, inviting
 them to dinner.
-    ```bash
-    >>> invitiation_lists
-    ['John Cena', 'The Rock', 'The Undertaker', 'The Big Show']
-    >>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[0]}")
-    I'd like to invite you for dinner Mr. John Cena
-    >>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[1]}")
-    I'd like to invite you for dinner Mr. The Rock
-    >>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[2]}")
-    I'd like to invite you for dinner Mr. The Undertaker
-    >>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[3]}")
-    I'd like to invite you for dinner Mr. The Big Show
-    ```
+```python
+>>> invitiation_lists
+['John Cena', 'The Rock', 'The Undertaker', 'The Big Show']
+>>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[0]}")
+I'd like to invite you for dinner Mr. John Cena
+>>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[1]}")
+I'd like to invite you for dinner Mr. The Rock
+>>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[2]}")
+I'd like to invite you for dinner Mr. The Undertaker
+>>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[3]}")
+I'd like to invite you for dinner Mr. The Big Show
+```
 ##### 3-5. Changing Guest List: 
 You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of
 someone else to invite.
@@ -269,7 +269,7 @@ You just found out that your new dinner table won’t arrive in time for the din
 
 ---
 
-### Organizing a List:
+### 3 Organizing a List:
 Often, your lists will be created in an unpredictable order, because you can’t always control the order in which your users provide their data. Although this is unavoidable in most circumstances, you’ll frequently want to present your information in a particular order. Sometimes you’ll want to preserve the original order of your list, and other times you’ll want to change the original order. Python provides a number of different ways to organize your lists, depending on the situation
 
 #### Sorting a List Permanently with the sort() method:
@@ -375,27 +375,27 @@ visit.
 ##### 3-9. Dinner Guests
 Working with one of the programs from Exercises 3-4
 through 3-7 (page 42), use len() to print a message indicating the number of people you are inviting to dinner.
-    ```python
-    >>> invitiation_lists = ['John','hulk','undertaker','rock','bigshoow']
-    >>> print(f"the number of guests are {len(invitiation_lists)}")
-    the number of guests are 5
-    ```
+```python
+>>> invitiation_lists = ['John','hulk','undertaker','rock','bigshoow']
+>>> print(f"the number of guests are {len(invitiation_lists)}")
+the number of guests are 5
+```
 ##### 3-10. Every Function: 
 Think of something you could store in a list. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items and then uses each function introduced in this chapter at least once.
-    ```python
-    >>> rivers = ['Deonia','koshi','mechi','adhuwa khola','kankai']
-    >>> print(sorted(rivers))
-    ['Deonia', 'adhuwa khola', 'kankai', 'koshi', 'mechi']
-    >>> print(len(rivers))    
-    5
-    >>> rivers.sort()      
-    >>> print(rivers)
-    ['Deonia', 'adhuwa khola', 'kankai', 'koshi', 'mechi']
-    ```
+```python
+>>> rivers = ['Deonia','koshi','mechi','adhuwa khola','kankai']
+>>> print(sorted(rivers))
+['Deonia', 'adhuwa khola', 'kankai', 'koshi', 'mechi']
+>>> print(len(rivers))    
+5
+>>> rivers.sort()      
+>>> print(rivers)
+['Deonia', 'adhuwa khola', 'kankai', 'koshi', 'mechi']
+```
 
 ---
 
-### Avoiding Index Errors When working with Lists:
+### 4 Avoiding Index Errors When working with Lists:
 - Accessing 4th item of a list with 3 items
     ```python
     >>> motorcycles = ['honda', 'yamaha', 'suzuki']
@@ -426,16 +426,14 @@ Think of something you could store in a list. For example, you could make a list
 ##### 3-11. Intentional Error
 If you haven’t received an index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
 
-    ```python
-    >>> vowels = ['a','e','i','o','u']
-    >>> print(vowels[5])
-    Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-    IndexError: list index out of range
-    >>> print(vowels[-1])
-    u
-    >>> print(vowels[-4]) 
-    e
-    ```
-
-------------------EOC------------------
+```python
+>>> vowels = ['a','e','i','o','u']
+>>> print(vowels[5])
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> print(vowels[-1])
+u
+>>> print(vowels[-4]) 
+e
+```
