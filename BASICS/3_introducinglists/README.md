@@ -15,7 +15,7 @@ In this chapter you will learn what lists are and how to work with the individua
 - Good Convention : Variable name is plural
 - Represented by the square bracket []
 - Can contain anything (heterogenous or homogenous elements)
-    ```bash
+    ```python
     >>> bicycles = ['trek','cannondale','redline','specialized']
     >>> print(bicycles)
     ['trek', 'cannondale', 'redline', 'specialized']
@@ -23,17 +23,17 @@ In this chapter you will learn what lists are and how to work with the individua
 - You dont want users to see the brackets and quotes. So we access each elements in a list.
 
 #### Accessingg Elements in a list:
-    ```bash
-    >>> print(bicycles[0])
-    trek
+```python
+>>> print(bicycles[0])
+trek
 
-    # Formatting:
-    >>> print(bicycles[0].title())
-    Trek
+# Formatting:
+>>> print(bicycles[0].title())
+Trek
 
-    >>> print(type(bicycles[0]))     
-    <class 'str'>
-    ```
+>>> print(type(bicycles[0]))     
+<class 'str'>
+```
 #### Index Positions Start at 0, Not 1:
 ```python
 >>> print(f"{bicycles[0]} is the 1st item \"bicycle[0]\"")
@@ -46,14 +46,13 @@ trek is the 1st item "bicycle[0]"
     ```
 - -2 => second last, -3 third item from the last of the list.
 #### Using Individual Values From a list:
-
-    ```bash
-    >>> print(f'hello ! {bicycles[0]} bicycle owner')
-    hello ! trek bicycle owner
-    >>> message = f'hello ! {bicycles[0].title()} bicycle owner'
-    >>> print(message)
-    hello ! Trek bicycle owner
-    ```
+```python
+>>> print(f'hello ! {bicycles[0]} bicycle owner')
+hello ! trek bicycle owner
+>>> message = f'hello ! {bicycles[0].title()} bicycle owner'
+>>> print(message)
+hello ! Trek bicycle owner
+```
 #### Try it yourself:
 
 - 3.1 Names:
