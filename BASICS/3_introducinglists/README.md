@@ -89,32 +89,30 @@ Most lists you create will be dynamic, meaning you’ll build a list and then ad
 of the sky. You could store the initial set of aliens in a list and then remove an alien from the list each time one is shot down. Each time a new alien appears on the screen, you add it to the list. Your list of aliens will increase and decrease in length throughout the course of the game.
 
 #### Modifying Elements in a List:
-
-    ```bash
-    >>> num = ['1','2','3']
-    >>> print(num)
-    ['1', '2', '3']
-    >>> num[0] = 0
-    >>> print(num)
-    [0, '2', '3']
-    ```
+```python
+>>> num = ['1','2','3']
+>>> print(num)
+['1', '2', '3']
+>>> num[0] = 0
+>>> print(num)
+[0, '2', '3']
+```
 #### Adding elements to a list:
 
 ##### Appending Elements to the End of a List:
-
-    ```bash
-    >>> motorcycles = ['honda','yamaha','suzuki']
-    >>> print(motorcycles)
-    ['honda', 'yamaha', 'suzuki']
-    >>> motorcycles.append('ducati')
-    >>> print(motorcycles)
-    ['honda', 'yamaha', 'suzuki', 'ducati']
-    ```
+```python
+>>> motorcycles = ['honda','yamaha','suzuki']
+>>> print(motorcycles)
+['honda', 'yamaha', 'suzuki']
+>>> motorcycles.append('ducati')
+>>> print(motorcycles)
+['honda', 'yamaha', 'suzuki', 'ducati']
+```
 - The append() method adds 'ducati' to the end of the list without affecting any of the other elements in the list. You could start with an empty list ``` motorcycles = [] ``` and append dynamically on it. 
 
 ##### Inserting Elements into a list:
 - The insert() method opens a space at position 0 and stores the value 'ducati' at that location. This operation shifts every other value in the list one position to the right.
-    ```bash
+    ```python
     >>> motorcycles
     ['honda', 'yamaha', 'suzuki', 'ducati']
     >>> motorcycles.insert(0,'TVS')
@@ -123,7 +121,7 @@ of the sky. You could store the initial set of aliens in a list and then remove 
     ```
 #### Removing Elements from a List:
 ##### Removing an item using the del statement:
-    ```bash
+    ```python
     >>> motorcycles
     ['TVS', 'honda', 'yamaha', 'suzuki', 'ducati']
     >>> del motorcycles[0]
@@ -134,7 +132,7 @@ of the sky. You could store the initial set of aliens in a list and then remove 
 ##### Removing an item using the pop() method:
 - pop() returns the value it removed
 - It removes the last item in a list. 
-    ```bash
+    ```python
     >>> motorcycles
     ['honda', 'yamaha', 'suzuki', 'ducati']
     >>> popped_motorcycle = motorcycles.pop()
@@ -197,19 +195,19 @@ of your program stating the name of the guest who can’t make it.
 the name of the new person you are inviting.
 - Print a second set of invitation messages, one for each person who is still
 in your list.
-    ```bash
-    >>> print(invitiation_lists[1])
-    The Rock
-    >>> invitiation_lists[1] = 'Stone Cold'
-    >>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[0]}")
-    I'd like to invite you for dinner Mr. John Cena
-    >>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[1]}")
-    I'd like to invite you for dinner Mr. Stone Cold
-    >>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[2]}")
-    I'd like to invite you for dinner Mr. The Undertaker
-    >>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[3]}")
-    I'd like to invite you for dinner Mr. The Big Show
-    ```
+```python
+>>> print(invitiation_lists[1])
+The Rock
+>>> invitiation_lists[1] = 'Stone Cold'
+>>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[0]}")
+I'd like to invite you for dinner Mr. John Cena
+>>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[1]}")
+I'd like to invite you for dinner Mr. Stone Cold
+>>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[2]}")
+I'd like to invite you for dinner Mr. The Undertaker
+>>> print(f"I'd like to invite you for dinner Mr. {invitiation_lists[3]}")
+I'd like to invite you for dinner Mr. The Big Show
+```
 ##### 3-6. More Guests: 
 You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
 - Start with your program from Exercise 3-4 or Exercise 3-5. Add a print() call to the end of your program informing people that you found a bigger dinner table.
