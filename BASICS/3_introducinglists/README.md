@@ -121,13 +121,13 @@ of the sky. You could store the initial set of aliens in a list and then remove 
     ```
 #### Removing Elements from a List:
 ##### Removing an item using the del statement:
-    ```python
-    >>> motorcycles
-    ['TVS', 'honda', 'yamaha', 'suzuki', 'ducati']
-    >>> del motorcycles[0]
-    >>> motorcycles        
-    ['honda', 'yamaha', 'suzuki', 'ducati']
-    ```
+```python
+>>> motorcycles
+['TVS', 'honda', 'yamaha', 'suzuki', 'ducati']
+>>> del motorcycles[0]
+>>> motorcycles        
+['honda', 'yamaha', 'suzuki', 'ducati']
+```
 - You have to know the index of an item you want to delete from the list.
 ##### Removing an item using the pop() method:
 - pop() returns the value it removed
